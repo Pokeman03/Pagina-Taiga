@@ -194,7 +194,7 @@ h1{
 
     .flotador-izquierdo,
     .flotador-derecho {
-        float: center;
+        float: none;
         width: 100%;
         text-align: center;
     }
