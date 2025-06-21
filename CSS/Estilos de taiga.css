@@ -184,74 +184,59 @@ h1{
 
 @media (max-width: 768px) {
     header {
-        width: 100%;
-        padding: 10px;
-        text-align: center;
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
+        padding: 10px 20px;
+        width: 100%;
+        background-color: #f3f3f3;
+        border-bottom: 3px inset #f48496;
     }
 
     .flotador-izquierdo,
     .flotador-derecho {
         float: none;
-        width: 100%;
-        text-align: center;
+    }
+
+    .flotador-izquierdo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: auto;
+    }
+
+    .flotador-derecho {
+        display: flex;
+        justify-content: flex-end;
+        flex-grow: 1;
     }
 
     nav ul {
+        display: flex;
+        gap: 10px;
         list-style: none;
         padding: 0;
         margin: 0;
-        display: flex;
-        flex-direction: column;
     }
 
     nav ul a {
-        padding: 10px 0;
-        display: block;
-        width: 100%;
-        font-size: 18px;
+        padding: 10px;
+        font-size: 16px;
+        text-decoration: none;
+        color: #232323;
+        transition: background 0.3s;
     }
 
-    .servicio-individual {
-        width: 90%;
-        height: auto;
-        float: none;
-        margin: 20px auto;
-    }
-
-    .imagen-noticia {
-        height: auto;
-    }
-
-    .seccion-servicios {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contenedor-pie-pagina {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding: 20px 0;
-    }
-
-    .pie {
-        width: 100%;
-        padding: 10px 20px;
-    }
-
-    .redes-sociales {
-        width: 30px;
-        height: 30px;
-        padding: 5px;
+    nav li:hover {
+        background-color: #f48496;
     }
 
     .logo {
-        width: 80px;
+        width: 50px;
+        height: auto;
     }
+}
+
 
     .contact-banner {
         padding: 30px 10px;
@@ -285,4 +270,4 @@ h1{
         font-size: 1rem;
         padding: 10px 0;
     }
-}
+
