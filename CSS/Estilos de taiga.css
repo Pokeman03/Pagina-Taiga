@@ -194,9 +194,9 @@ h1{
 
     .flotador-izquierdo,
     .flotador-derecho {
-        float: none;
+        float: left;
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
 
     nav ul {
