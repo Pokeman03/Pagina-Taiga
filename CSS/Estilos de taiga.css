@@ -1,0 +1,180 @@
+@font-face{
+    font-family: 'personal';
+    src: url(../Archivos/Archivos/Mollen-Personal-Use-Regular.otf);
+}
+*{
+    font-family: 'personal';
+}
+body{
+    margin: 0;
+}
+.logo{
+    width: 50px; /*el logo lo puse mas pequeño para que se viera mas estetico*/
+    padding-top: 5px;
+}
+header{
+    width: 70%;
+    background-color: #f3f3f3;
+    border-bottom: 3px inset  #f48496;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-weight: bold;
+}
+.flotador-izquierdo{
+    float: left;
+}
+.flotador-derecho{
+    float: right;
+}    
+nav ul{
+    list-style: circle;
+    margin: 0;
+}
+nav ul a{
+    text-decoration: none;
+    color: #232323;
+}
+nav li{
+    padding: 25px 20px;
+}
+nav li:hover{
+    background-color:  #f48496; /*Le puse el color rosa para cuando pongo el raton encima de los botones*/
+    color: #232323;
+}
+
+.borde-imagen{
+    clip-path: polygon(0 0,100% 0,100% 90%,0% 100%);
+}
+
+.titulo-seccion{
+    width: 100%;
+    padding-top: 2%;
+    text-align: center;
+}
+
+.seccion-noticias{
+    width: 80%;
+    padding: 2% 10%;
+}
+
+.servicio-individual{
+    width: 30%;
+    height: 520px;
+    border: 1px solid #D3D3D3;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: justify;
+    padding-bottom: 1%;
+    float: left;
+}
+
+.imagen-noticia{
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.titulo-servicio{
+    padding: 1% 5%;
+}
+
+.resumen-servicio{
+    padding: 1% 5%;
+}
+
+.boton-noticia{
+    background-color:   #f6c2cd;
+    text-decoration: none;
+    color:  black;
+    display: block;                   /*Tambien le cambie los colores a las noticias*/
+    text-align: center;
+    padding: 2% 0;
+    margin: 0 5%;
+    border-radius: 10px;
+}
+
+.boton-noticia:hover{
+    background-color:  #f48496 ;
+    color: #ffbb22;
+}
+
+/* Fin de Módulo 13 Clase 5 */
+
+.logo-pie { 
+	width: 210px;
+}
+figure{
+	display: flex;
+	justify-content: center;
+}
+.contenedor-pie-pagina{
+	width: 100%;
+	background-color: #CDCDCD;
+	display: grid;
+	grid-template-columns:repeat(3, 1fr); 
+}
+.pie{
+	width: 89%;
+	padding: 5% 5%;
+}
+.pie a { 
+	text-decoration: none;
+}
+
+.redes-sociales { 
+	border: solid 1px #000;
+	width: 17px;
+	height: 17px;
+	padding: 10px;
+	border-radius: 30px;
+}
+
+.pie-pagina-copyright{
+	background-color:  #f48496;
+	padding: 10px 10px;
+	text-align: center;
+	font-weight: bold;
+}
+
+h1{
+    color:  #f48496;
+}
+
+.contact-banner {
+  background: linear-gradient(135deg, #f6c2cd, #f48496);
+  color: #000000;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.contact-banner h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contact-banner p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.contact-btn {
+  background-color: #000000;
+  color: #faf5f6;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #333;
+}
+
