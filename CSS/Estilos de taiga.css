@@ -224,6 +224,8 @@ h1{
         text-align: center;
     }
 
+
+
     nav ul {
         list-style: none;
         padding: 0;
@@ -247,8 +249,12 @@ h1{
     }
 
     .imagen-noticia {
-        height: auto;
+        max-width: 100%;
+       height: auto;
+       display: block;
+       margin: 0 auto;
     }
+
 
     .seccion-servicios {
         display: flex;
@@ -270,10 +276,11 @@ h1{
           justify-content: flex-start;
     }
         
-    .pie {
-        width: 100%;
-        padding: 10px 20px;
-    }
+       .pie {
+    text-align: left;
+      }
+
+
 
     .redes-sociales {
         width: 30px;
@@ -305,9 +312,12 @@ h1{
     }
 
     iframe {
-        width: 100%;
-        height: 300px;
+     width: 100%;
+     max-width: 100%;
+     display: block;
+     border: none;
     }
+
 
     .titulo-seccion h1 {
         font-size: 1.5rem;
@@ -380,6 +390,14 @@ h1{
     background-color: #f48496;
     color: #fff;
 }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 
