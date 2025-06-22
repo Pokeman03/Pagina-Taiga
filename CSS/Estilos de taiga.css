@@ -177,10 +177,35 @@ h1{
 .contact-btn:hover {
   background-color: #333;
 }
+.menu-horizontal {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
 
-/* ============================= */
-/* ESTILOS RESPONSIVE PARA MÓVILES */
-/* ============================= */
+.menu-horizontal li {
+  display: inline-block;
+}
+
+.menu-horizontal a {
+  text-decoration: none;
+  color: #232323;
+  font-weight: bold;
+  padding: 20px 10px;
+}
+
+.menu-horizontal a:hover {
+  background-color: #f48496;
+  color: white;
+}
+.nav-principal {
+  display: block;
+}
+
+/* Estilo de telefono*/
 
 @media (max-width: 768px) {
     header {
@@ -287,17 +312,6 @@ h1{
     }
 }
 
-css
-.menu-toggle {
-  display: none;
-  font-size: 30px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 15px;
-}
-
-@media (max-width: 768px) {
 .menu-toggle {
   display: none;
   font-size: 28px;
@@ -360,5 +374,5 @@ css
     color: #fff;
 }
 }
-}
+
 
