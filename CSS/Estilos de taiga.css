@@ -217,17 +217,12 @@ h1{
         align-items: center;
     }
 
-    
-
     .flotador-izquierdo,
     .flotador-derecho {
-       width: 100%;
-      text-align: center;
-      display: flex;
-     flex-direction: column;
-     align-items: center;
-     }
-
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
 
 
 
