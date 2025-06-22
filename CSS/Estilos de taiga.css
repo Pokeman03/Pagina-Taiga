@@ -259,7 +259,7 @@ h1{
     .contenedor-pie-pagina {
         display: flex;
         flex-direction: column;
-        text-align: center;
+        text-align: left;
         padding: 20px 0;
     }
 
