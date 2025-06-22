@@ -262,7 +262,14 @@ h1{
         text-align: left;
         padding: 20px 0;
     }
-
+    
+    .logo-izquierda{
+          width: 100%;
+         padding: 10px 20px;
+           display: flex;
+          justify-content: flex-start;
+    }
+        
     .pie {
         width: 100%;
         padding: 10px 20px;
