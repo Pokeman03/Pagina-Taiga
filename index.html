@@ -11,22 +11,17 @@
     <header class="flotador-izquierdo">
         <div class="flotador-izquierdo"><a href="/CSS/Estilos de taiga 2.css"><img src="/IMAGENES/Logo taiga sin letras.png" alt="" class="logo"></a></div>
         <div class="flotador-derecho">
-            <nav>
-                <ul>
-                    <a href="#contacto" class="flotador-derecho">
-                        <li>Contacto</li>
-                    </a>
-                    <a href="#ubicacion" class="flotador-derecho">
-                        <li>Ubicacion</li>
-                    </a>
-                    <a href="#Servicios" class="flotador-derecho">
-                        <li>Servicios</li>
-                    </a>
-                    <a href="#inicio" class="flotador-derecho">
-                        <li>Inicio</li>
-                    </a>
-                </ul>
-            </nav>
+            <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+
+         <nav class="nav-principal" id="nav-principal">
+           <ul class="menu">
+           <li><a href="#inicio">Inicio</a></li>
+           <li><a href="#Servicios">Servicios</a></li>
+           <li><a href="#ubicacion">Ubicación</a></li>
+           <li><a href="#contacto">Contacto</a></li>
+           </ul>
+           </nav>
+
         </div>
     </header>
     <div><img src="/IMAGENES/Black Red Minimalist Fashion Product Introduction Landscape Banner (1).png" alt="" width="100%" class="borde-imagen"></div>
@@ -118,6 +113,15 @@
 				<small>&copy; 2025 <b>Taiga Studio</b> - Todos los derechos reservados</small>	
 		</div>
 	</footer>
+
+    <script>
+  const toggleButton = document.getElementById("menu-toggle");
+  const nav = document.getElementById("nav-principal");
+
+  toggleButton.addEventListener("click", () => {
+    nav.classList.toggle("show");
+});
+</script>
 
 </body>
 </html>
