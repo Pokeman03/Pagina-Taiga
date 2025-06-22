@@ -329,3 +329,43 @@ css
 }
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background-color: #f6c2cd;
+  color: #000;
+  border: 2px solid #f48496;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin: 10px;
+  transition: background 0.3s ease;
+}
+
+.menu-toggle:hover {
+  background-color: #f48496;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+.nav-principal {
+    background-color: #f6c2cd;
+    border-top: 2px solid #f48496;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-principal li {
+    border-top: 1px solid #f48496;
+    padding: 15px 0;
+}
+
+.nav-principal a {
+    color: #232323;
+    font-weight: bold;
+}
+
+.nav-principal li:hover {
+    background-color: #f48496;
+    color: #fff;
+}
+}
+
