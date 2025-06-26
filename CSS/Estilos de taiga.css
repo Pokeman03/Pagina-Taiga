@@ -52,20 +52,28 @@ nav li:hover{
     text-align: center;
 }
 
-.seccion-noticias{
-    width: 80%;
+.seccion-servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 por fila */
+    gap: 20px;
     padding: 2% 10%;
 }
 
-.servicio-individual{
-    width: 30%;
-    height: 520px;
+
+.servicio-individual {
+    height: 580px;
     border: 1px solid #D3D3D3;
     border-radius: 10px;
-    margin: 10px;
     text-align: justify;
     padding-bottom: 1%;
-    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Centrar el último si está solo en su fila (por ejemplo, hay 7 servicios en total) */
+.seccion-servicios > .servicio-individual:last-child:nth-child(3n + 1):nth-last-child(1) {
+    grid-column: 2 / 3; /* lo coloca en la columna central */
 }
 
 .imagen-noticia{
@@ -83,20 +91,21 @@ nav li:hover{
     padding: 1% 5%;
 }
 
-.boton-noticia{
-    background-color:   #f6c2cd;
+.boton-noticia {
+    background-color: #f6c2cd;
     text-decoration: none;
-    color:  black;
-    display: block;                   /*Tambien le cambie los colores a las noticias*/
+    color: black;
+    display: block;
     text-align: center;
-    padding: 2% 0;
-    margin: 0 5%;
+    padding: 12px 0;
+    margin: 20px 5% 10px;
     border-radius: 10px;
 }
 
-.boton-noticia:hover{
-    background-color:  #f48496 ;
-    color: #ffbb22;
+
+.boton-noticia:hover {
+    background-color: #f48496;
+    color: #ffbb22;
 }
 
 /* Fin de Módulo 13 Clase 5 */
